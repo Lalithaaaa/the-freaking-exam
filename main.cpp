@@ -5,7 +5,7 @@
 
 int main() {
     return 0;
-    std::vector<int> idk = wordHistogram("hello there");
+
 }
 
 

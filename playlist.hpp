@@ -7,6 +7,11 @@
 
 
 class playlist {
+
+int numSongs_; // number of songs in the playlist
+double totalMinutes_; // total play time of the playlist (in minutes)
+
+
 };
 
 

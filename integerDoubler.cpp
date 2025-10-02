@@ -4,7 +4,7 @@
 #include <string>
 #include <fstream>
 #include <vector>
-
+/*
 void integerDoubler(std::string inputFile, std::string outputFile) {
     // read integers from binary file
     std::ifstream in(inputFile, std::ios::binary);
@@ -31,3 +31,4 @@ void integerDoubler(std::string inputFile, std::string outputFile) {
     out.close();
 
 }
+*/

@@ -41,7 +41,7 @@ double Playlist::averageSongLength() const {
 }
 
 Playlist Playlist::operator+(const Playlist& other) const {
-	Playlist play(other.getNumSongs(), other.getTotalMinutes());
+	Playlist play(numSongs_ + other.getNumSongs(), totalMinutes_ + other.getTotalMinutes());
 	return play;
 }
 

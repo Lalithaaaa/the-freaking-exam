@@ -18,13 +18,11 @@ void integerDoubler(std::string inputFile, std::string outputFile) {
 	}
     std::vector<int32_t> ints;
     int i = 0;
-    while (in.is_open()) {
+    while (in) {
 		ints.push_back(0);
         in.read(reinterpret_cast<char*>(&ints[i]), sizeof(int32_t));
         i++;
     }
-
-	in.close();
 
     //writes into other binary file
     std::ofstream out(outputFile, std::ios::binary);

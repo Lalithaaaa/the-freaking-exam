@@ -18,7 +18,7 @@ void integerDoubler(std::string inputFile, std::string outputFile) {
 	}
     std::vector<int32_t> ints;
     int i = 0;
-    while (in) {
+    while (in.is_open()) {
 		ints.push_back(0);
         in.read(reinterpret_cast<char*>(&ints[i]), sizeof(int32_t));
         i++;

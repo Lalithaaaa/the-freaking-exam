@@ -31,7 +31,7 @@ double Playlist::getTotalMinutes() const {
 	return totalMinutes_;
 }
 
-int Playlist::averageSongLength() const {
+double Playlist::averageSongLength() const {
 	// returns the average song length in minutes (totalMinutes_ / numSongs_). If numSongs_ is 0, return 0.
 	if(numSongs_ == 0) {
 		return 0;
@@ -45,13 +45,13 @@ Playlist Playlist::operator+(const Playlist& other) const {
 	return play;
 }
 
-/*
+
 Playlist& Playlist::operator+=(const Playlist& other) {
 	numSongs_ = other.getNumSongs();
 	totalMinutes_ = other.getTotalMinutes();
-	return &this;
+	return *this;
 }
-*/
+
 
 
 

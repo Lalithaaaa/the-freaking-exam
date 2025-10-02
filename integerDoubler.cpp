@@ -9,7 +9,7 @@ void integerDoubler(std::string inputFile, std::string outputFile) {
     // read integers from binary file
     std::ifstream in(inputFile, std::ios::binary);
 
-    std::vector<int> ints = {};
+    std::vector<char> ints = {};
     int i = 0;
     while (in) {
         in.read(reinterpret_cast<char*>(&ints[i]), sizeof(i));

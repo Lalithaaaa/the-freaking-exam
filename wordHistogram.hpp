@@ -5,6 +5,8 @@
 #ifndef THE_FREAKING_EXAM_WORDHISTOGRAM_H
 #define THE_FREAKING_EXAM_WORDHISTOGRAM_H
 
+#include <vector>
+#include <string>
 #include "wordHistogram.cpp"
 
 std::vector<int> match(std::string sentence);

@@ -20,7 +20,7 @@ void integerDoubler(std::string inputFile, std::string outputFile) {
     int i = 0;
     while (in) {
 		ints.push_back(0);
-        in.read(reinterpret_cast<char*>(&ints[i]), int32_t);
+        in.read(reinterpret_cast<char*>(&ints[i]), sizeof(int32_t));
         i++;
     }
 
@@ -35,7 +35,7 @@ void integerDoubler(std::string inputFile, std::string outputFile) {
 
     for (auto& element : ints) {
 		element *= 2;
-        out.write(reinterpret_cast<char*>(element),int32_t);
+        out.write(reinterpret_cast<char*>(element),sizeof(int32_t));
     }
 
     out.close();

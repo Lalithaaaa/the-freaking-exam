@@ -19,7 +19,7 @@ void integerDoubler(std::string inputFile, std::string outputFile) {
 
     //doubles each
     for (auto& element : ints) {
-        element *= 2;
+        (int)element *= 2;
     }
 
     //writes into other binary file

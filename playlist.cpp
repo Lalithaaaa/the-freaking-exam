@@ -32,3 +32,4 @@ int playlist::getNumSongs() const {
 double playlist::getTotalMinutes() const {
 	return totalMinutes_;
 }
+

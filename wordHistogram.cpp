@@ -33,8 +33,8 @@ std::vector<int> wordHistogram(std::string sentence) {
                     	wordCounts.push_back(1);
                 	} else {
                     	wordCounts.push_back(0);
-						count++;
                 	}
+					count++;
            		}
 			}
 			count = 0;
@@ -46,6 +46,8 @@ std::vector<int> wordHistogram(std::string sentence) {
 	wordCounts[0] = 0;
     return wordCounts;
 }
+
+
 
 
 

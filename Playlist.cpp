@@ -20,7 +20,7 @@ void Playlist::setNumSongs(int n) {
 }
 
 void Playlist::setTotalMinutes(double t) {
-	totalMinutes = t;
+	totalMinutes_ = t;
 }
 
 int Playlist::getNumSongs() const {
@@ -33,7 +33,7 @@ double Playlist::getTotalMinutes() const {
 
 int Playlist::averageSongLength() const {
 	// returns the average song length in minutes (totalMinutes_ / numSongs_). If numSongs_ is 0, return 0.
-	if(numSong_ == 0) {
+	if(numSongs_ == 0) {
 		return 0;
 	}
 
@@ -41,14 +41,17 @@ int Playlist::averageSongLength() const {
 }
 
 Playlist Playlist::operator+(const Playlist& other) const {
-	Playlist play = new Playlist(other.getNumSongs(), other.getTotalMinutes());
+	Playlist play(other.getNumSongs(), other.getTotalMinutes());
 	return play;
 }
 
+/*
 Playlist& Playlist::operator+=(const Playlist& other) {
 	numSongs_ = other.getNumSongs();
 	totalMinutes_ = other.getTotalMinutes();
+	return &this;
 }
+*/
 
 
 

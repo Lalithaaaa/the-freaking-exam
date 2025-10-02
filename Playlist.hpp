@@ -5,9 +5,7 @@
 #ifndef THE_FREAKING_EXAM_1_PLAYLIST_H
 #define THE_FREAKING_EXAM_1_PLAYLIST_H
 
-
 class Playlist {
-
 	public:
 	int numSongs_; // number of songs in the playlist
 	double totalMinutes_; // total play time of the playlist (in minutes)
@@ -26,11 +24,13 @@ class Playlist {
 
 	double getTotalMinutes() const; // returns the total play time.
 
-	double averageSongLength() const; // returns the average song length in minutes (totalMinutes_ / numSongs_). If numSongs_ is 0, return 0.
+	int averageSongLength() const; // returns the average song length in minutes (totalMinutes_ / numSongs_). If numSongs_ is 0, return 0.
 
 	Playlist operator+(const Playlist& other) const; //Returns a new Playlist whose numSongs_ and totalMinutes_ are the sum of the two operands.
 
-	Playlist& operator+=(const Playlist& other) //Modifies the current playlist by adding in another playlist’s songs and time.
+	/*
+	Playlist& operator+=(const Playlist& other); //Modifies the current playlist by adding in another playlist’s songs and time.
+	*/
 };
 
 

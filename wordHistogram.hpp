@@ -7,7 +7,7 @@
 
 #include <vector>
 #include <string>
-#include "wordHistogram.cpp"
+
 
 std::vector<int> wordHistogram(std::string sentence);
 

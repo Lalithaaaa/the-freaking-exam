@@ -8,7 +8,6 @@
 #include <vector>
 #include <string>
 
-
 std::vector<int> wordHistogram(std::string sentence);
 
 

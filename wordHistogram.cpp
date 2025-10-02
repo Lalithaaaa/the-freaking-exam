@@ -6,11 +6,15 @@
 #include <iostream>
 
 std::vector<int> wordHistogram(std::string sentence) {
-    std::vector<int> wordCounts = {0};
+    std::vector<int> wordCounts = {};
+
+    if (sentence.size() == 0) {
+        return wordCounts;
+    }
 
     int count = 0;
     for (int i = 0; i < sentence.size(); i++) {
-        if (strcomp(sentence.at(i), " ") == 0)  {
+        if (sentence.at(i) == " ")  {
 
             if (wordCounts.size() > count) {
                 wordCounts[count] += 1;

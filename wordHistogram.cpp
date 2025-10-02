@@ -6,7 +6,7 @@
 #include <iostream>
 
 
-std::vector<int> wordHistogram(std::string sentence) {
+std::vector<int> match(std::string sentence) {
     std::vector<int> wordCounts = {};
 
     if (sentence.size() == 0) {

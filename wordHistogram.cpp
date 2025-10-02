@@ -4,7 +4,7 @@
 #include <vector>
 #include <string>
 #include <iostream>
-/*
+
 
 std::vector<int> wordHistogram(std::string sentence) {
     std::vector<int> wordCounts = {};
@@ -37,4 +37,3 @@ std::vector<int> wordHistogram(std::string sentence) {
     return wordCounts;
 }
 
-*/

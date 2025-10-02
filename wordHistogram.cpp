@@ -36,6 +36,7 @@ std::vector<int> wordHistogram(std::string sentence) {
 		}
     }
 
+	wordCounts[0] = 0;
     return wordCounts;
 }
 

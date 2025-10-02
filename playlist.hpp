@@ -24,10 +24,15 @@ class playlist {
 
 	Getters (accessors);
 
-	getNumSongs() const; // returns the number of songs.
+	int getNumSongs() const; // returns the number of songs.
 
-	getTotalMinutes() const; // returns the total play time.
+	double getTotalMinutes() const; // returns the total play time.
 
+	averageSongLength() const; // returns the average song length in minutes (totalMinutes_ / numSongs_). If numSongs_ is 0, return 0.
+
+	Playlist operator+(const Playlist& other) const; //Returns a new Playlist whose numSongs_ and totalMinutes_ are the sum of the two operands.
+
+	Playlist& operator+=(const Playlist& other) //Modifies the current playlist by adding in another playlist’s songs and time.
 };
 
 

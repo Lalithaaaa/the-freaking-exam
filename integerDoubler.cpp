@@ -6,11 +6,12 @@
 #include <vector>
 
 void integerDoubler(std::string inputFile, std::string outputFile) {
+	/*
     // read integers from binary file
     std::ifstream in(inputFile, std::ios::binary);
 
     std::vector<char> ints = {};
-    long long i = 0;
+    int i = 0;
     while (in) {
         in.read(reinterpret_cast<char*>(&ints[i]), sizeof(i));
         i++;
@@ -29,5 +30,5 @@ void integerDoubler(std::string inputFile, std::string outputFile) {
     }
 
     out.close();
-
+	*/
 }

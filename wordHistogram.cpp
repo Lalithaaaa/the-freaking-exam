@@ -15,22 +15,29 @@ std::vector<int> wordHistogram(std::string sentence) {
     }
 
     size_t count = 0;
+	/*
+	 for (size_t i = 0; i < sentence.size(); i++) {
+
+	}
+	*/
+
+
     for (size_t i = 0; i < sentence.size(); i++) {
 
         if (sentence.at(i) == ' ')  {
             if (wordCounts.size() > count) {
                 wordCounts[count] += 1;
-				count = 0;
             } else { // count too big
             	while (wordCounts.size() <= count) {
                 	if (wordCounts.size() == (count + 1)) {
                     	wordCounts.push_back(1);
                 	} else {
                     	wordCounts.push_back(0);
+						count++;
                 	}
-					count = 0;
            		}
 			}
+			count = 0;
         } else {
 			count++;
 		}

@@ -6,7 +6,7 @@
 #define THE_FREAKING_EXAM_1_PLAYLIST_H
 
 class Playlist {
-	public:
+public:
 	int numSongs_; // number of songs in the playlist
 	double totalMinutes_; // total play time of the playlist (in minutes)
 

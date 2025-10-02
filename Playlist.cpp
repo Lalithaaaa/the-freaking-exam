@@ -47,8 +47,8 @@ Playlist Playlist::operator+(const Playlist& other) const {
 
 
 Playlist& Playlist::operator+=(const Playlist& other) {
-	numSongs_ = other.getNumSongs();
-	totalMinutes_ = other.getTotalMinutes();
+	numSongs_ += other.getNumSongs();
+	totalMinutes_ += other.getTotalMinutes();
 	return *this;
 }
 

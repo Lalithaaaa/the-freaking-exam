@@ -12,9 +12,9 @@ std::vector<int> wordHistogram(std::string sentence) {
         return wordCounts;
     }
 
-    int count = 0;
-    for (int i = 0; i < sentence.size(); i++) {
-        if (sentence.at(i) == " ")  {
+    size_t count = 0;
+    for (size_t i = 0; i < sentence.size(); i++) {
+        if ((char)sentence.at(i) == ' ')  {
 
             if (wordCounts.size() > count) {
                 wordCounts[count] += 1;
